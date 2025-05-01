@@ -44,10 +44,7 @@ public class Math {
 		return a+b;	
 	}
 	
-	public double circleArea(int radius) {
-		double result = 3.14 * radius * radius;
-		return result;
-	}
+//	
 	
 	
 }
