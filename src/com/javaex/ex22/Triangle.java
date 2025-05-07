@@ -52,12 +52,11 @@ public class Triangle extends Shape{
 
 
 	public void draw() {
-		System.out.println("===삼각형을 그렸습니다.================================");
 		System.out.println("면색:" + super.getFillColor() );
 		System.out.println("선색:" + super.getLineColor());
 		System.out.println("가로:" + this.width);
 		System.out.println("세로:" + this.height);
-		System.out.println("===================================================");
+		System.out.println("===삼각형을 그렸습니다.================================");
 	}
 		
 }

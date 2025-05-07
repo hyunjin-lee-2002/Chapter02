@@ -31,11 +31,10 @@ public class Circle extends Shape{
 	}
 	
 	public void draw() {
-		System.out.println("===원을 그렸습니다.================================");
 		System.out.println("면색:" + super.getFillColor() );
 		System.out.println("선색:" + super.getLineColor());
 		System.out.println("반지름:" + this.radius);
-		System.out.println("===================================================");
+		System.out.println("===원을 그렸습니다.================================");
 	}
 
 }
