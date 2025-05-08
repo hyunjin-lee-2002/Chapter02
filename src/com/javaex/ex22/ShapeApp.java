@@ -4,10 +4,12 @@ public class ShapeApp {
 
 	public static void main(String[] args) {
 		
-		Shape s01 = new Shape("빨강", "검정");
+		//지피티
+		Shape s01 = new Triangle("빨강", "검정", 5, 10); // OK
+		//Shape s01 = new Shape("빨강", "검정");
 		System.out.println(s01.toString());
 		
-		//선, 면의색이 없는 삼각형은 잘못된것임
+		//선, 면의색이 없는 삼각형은 잘못됨
 		//Triangle t01 = new Triangle(5, 10); 
 	
 		Triangle t01 = new Triangle("빨강", "검정", 5, 10);
@@ -42,7 +44,7 @@ public class ShapeApp {
 		//sr.draw();
 		
 		
-		//하나의 배열에 모든 도형을 담는다 --> 자식쪽의 기능은 사용할수없다
+		//하나의 배열에 모든 도형을 담는다 --> 자식쪽의 기능은 사용할 수 없음
 		//모든 도형을 담을수 있는 배열
 		Shape[] sArray = new Shape[3];
 		
@@ -53,14 +55,22 @@ public class ShapeApp {
 		
 		
 	
-		//전체도형을  draw()로출력-->자식쪽의 기능으로 사용할 수없다
+		//전체도형을  draw()로출력-->자식쪽의 기능으로 사용할 수 없음
 		//해결방법-->오버라이딩
 		//         :부모쪽에 자식쪽과 똑같은 메소드를 작성해서 덮어쓰도록 만든다
 		for(int i=0; i<sArray.length; i++) {
 			sArray[i].draw();
 		}
 		
+		//삼각혁의 가로 값을 읽고 싶음  --> 가려져서 못 읽음
+		System.out.println(((Triangle)sArray[0]).getWidth());
+		//사각형의 가로
+		System.out.println(((Rectangle)sArray[2]).getWidth());
+		//원의 반지름
+		System.out.println(((Circle)sArray[1]).getRadius());
 
+		//Shape s = new Shape();
+		//s.draw();  
 	}
 
-}
+} 

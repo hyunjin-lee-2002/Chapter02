@@ -1,4 +1,4 @@
-package com.javaex.ex22;
+package com.javaex.ex23;
 
 public abstract class Shape {
 	
@@ -39,5 +39,7 @@ public abstract class Shape {
 	}
 
 	public abstract void draw();  //내용 없어도 무관
+	
+	 //public abstract double area(); // gpt
     	
 }
