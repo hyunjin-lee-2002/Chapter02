@@ -1,6 +1,5 @@
 package com.javaex.ex23;
 
-
 public class ShapeApp {
 
 	public static void main(String[] args) {
